@@ -2,38 +2,36 @@
 
 /**
  *
- *  * _memcpy - copies n bytes form the memory area src
+ * *_memcpy -   copy number bytes form adress "from" to adress "to"
  *
- *   * to memory area dest
+ * *@dest: content is to be copied
  *
- *    * @src: source code to copy
+ * *@src: Source of data to be copied
  *
- *     * @dest: paramater for destination to  copy to
+ * *@n: bytes of the memory
  *
- *      * @n: how many bytes to copy
+ * *Return: dest
  *
- *       * Return: dest;
- *
- *        */
-
-
+ * */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 
 {
 
-		unsigned int i;
+	unsigned int i;
 
+	i = 0;
 
+	while (i < n)  /*Delacring WHILE*/
 
-			for (i = 0; i < n; i++)
+	{
 
-					{
+		*(dest + i) = *(src + i); /*add 1 position dest and src*/
 
-								dest[i] = src[i];
+		i++;
 
-									}
+	} /*END WHILE*/
 
-				return (dest);
+	return (dest);
 
 }
