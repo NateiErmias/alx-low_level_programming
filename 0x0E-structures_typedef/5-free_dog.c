@@ -1,9 +1,8 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
-*free_dog - free memory created with malloc
-*@d: memory to free
-*
-* Return: nothing
+* free_dog - Frees dogs.
+* @d: The dog to be freed.
 */
 void free_dog(dog_t *d)
 {
